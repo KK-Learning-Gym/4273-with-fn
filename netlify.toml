@@ -1,0 +1,8 @@
+[functions]
+  directory = "functions"
+
+[[redirects]]
+  force = true
+  from = "/foo/*"
+  status = 301
+  to = "/.netlify/functions/bar/?url=:splat"
