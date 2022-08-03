@@ -1,6 +1,12 @@
 [functions]
   directory = "functions"
 
+## Config mentioned in the test: "should handle query params in redirects"
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/echo?a=1&a=2"
+
+## Config mentioned in issue: https://github.com/netlify/cli/issues/4273
 [[redirects]]
   force = true
   from = "/foo/*"
